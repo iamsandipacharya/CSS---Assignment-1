@@ -1,0 +1,91 @@
+/* Reset and Box-sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('https://wallpapers.com/images/hd/album-cover-3801-x-2262-background-b8sp39q5xhwfyty1.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: rgb(162, 188, 211);
+    font-size: 2.5rem;
+}
+
+header h2 {
+    font-weight: 400;
+    color: rgb(162, 190, 215);
+    font-size: 1.8rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #ffffffd3;
+    color: #000707bc;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px 0;
+    line-height: 1.6;
+    text-align: center; /* Center align the text */
+    border-top: 1px solid #000707; /* Add a top border */
+}
+
+/* Advanced Selector for Styling the Lyrics */
+main > section:nth-of-type(3) p {
+    text-align: left;
+    white-space: pre-wrap;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+}
